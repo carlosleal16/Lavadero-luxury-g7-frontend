@@ -1,0 +1,72 @@
+
+
+/* Navbar */
+.navbar {
+    padding: 15px 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 250px;
+}
+
+.search-box i {
+    margin-right: 10px;
+    color: #999;
+}
+
+.search-box .form-control {
+    border: none;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Tarjetas */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 400px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.btn {
+    border-radius: 8px;
+}

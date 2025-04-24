@@ -1,0 +1,47 @@
+<div class="d-flex">
+    <!-- Barra lateral -->
+    <app-menu></app-menu>
+
+    <!-- Contenido principal -->
+    <div class="content-area flex-grow-1 d-flex flex-column">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand fw-bold" href="#">Registrar Vehículo</a>
+                <div class="search-box">
+                    <i class="bi bi-search"></i>
+                    <input type="text" class="form-control" placeholder="Buscar">
+                </div>
+                <div class="d-flex align-items-center">
+                    <span class="me-2">Lakee</span>
+                    <i class="bi bi-person"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contenido central -->
+        <div class="main-content d-flex justify-content-center align-items-center flex-grow-1">
+            <div class="form-container">
+                <h4 class="text-center mb-3">Registrar Vehículo</h4>
+                <form (submit)="registrarVehiculo()">
+                    <div class="mb-3">
+                        <label class="form-label">Placa del Vehículo</label>
+                        <input type="text" class="form-control" [(ngModel)]="RegisVehiculo.placa" name="placa" placeholder="Ingrese la placa">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Tipo de Vehículo</label>
+                        <select class="form-select" [(ngModel)]="RegisVehiculo.tipo" name="tipo">
+                            <option disabled selected>Seleccione una opción</option>
+                            <option>Automóvil</option>
+                            <option>Motocicleta</option>
+                            <option>Camioneta</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Registrar Vehículo</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

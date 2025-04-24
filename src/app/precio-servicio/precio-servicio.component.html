@@ -1,0 +1,87 @@
+<div class="d-flex">
+  <!-- Barra lateral -->
+  <app-menu></app-menu>
+
+  <!-- Contenido principal -->
+  <div class="flex-grow-1">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand fw-bold" href="#">Perfil</a>
+        <div class="search-box">
+          <i class="bi bi-search"></i>
+          <input type="text" class="form-control" placeholder="Buscar" />
+        </div>
+        <div class="d-flex align-items-center">
+          <span class="me-2">Lakee</span>
+          <i class="bi bi-person"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Tarjetas de servicios -->
+    <div class="container py-4">
+      <div class="row g-4 justify-content-center">
+        <!-- Repetir esto por cada tarjeta -->
+        <div class="col-md-3">
+          <div class="card">
+            <img src="Imagen1.png" alt="Lavado Express" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">Lavado Express</h5>
+              <p class="card-text">$ 100.000</p>
+              <button class="btn btn-primary">Saber más</button>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 2 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="Imagen2.png" alt="Lavado Completo" class="card-img-top" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Lavado Completo</h5>
+              <p class="card-text">$180.000</p>
+              <button class="btn btn-outline-primary">Saber más</button>
+            </div>
+          </div>
+        </div>
+        <!-- Tarjeta 3 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="Imagen3.png" alt="Lavado a vapor" class="card-img-top" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Lavado a vapor</h5>
+              <p class="card-text">$120.000</p>
+              <button class="btn btn-outline-primary">Saber más</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="Imagen4.png" alt="Lavado de motor" class="card-img-top" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Lavado de motor</h5>
+              <p class="card-text">$140.000</p>
+              <button class="btn btn-outline-primary">Saber más</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="Imagen5.png" alt="Lavado interno" class="card-img-top" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Lavado interno</h5>
+              <p class="card-text">$80.000</p>
+              <button class="btn btn-outline-primary">Saber más</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
